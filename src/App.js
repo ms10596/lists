@@ -42,18 +42,13 @@ class App extends Component {
     var v = s["value"];
     var o = {};
     o["name"] = v;
-    // console.log(o);
 
     var things = this.state.items;
-    // console.log(things);
-    // console.log(n);
     if (things[n]) {
       things[n].push(o);
-      // console.log(things);
       this.setState({
         items: things
       });
-      // console.log(this.state.items);
     }
   }
 
