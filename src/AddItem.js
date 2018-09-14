@@ -16,11 +16,9 @@ class AddItem extends Component {
 
     var newItem = {
       name: this.props.idName,
-      value: e.target.input.value
+      value: this.refs.id.value
     };
     this.props.addItem(newItem);
-
-    // Implement the rest of this function here!
   }
 
   render() {
@@ -32,7 +30,7 @@ class AddItem extends Component {
           <div id={divName} ref={divName}>
             <label>Name</label>
             <br />
-            <input type="text" ref="id" id="input" />
+            <input type="text" ref="id" />
           </div>
           <br />
           <input type="submit" value="Submit" />
